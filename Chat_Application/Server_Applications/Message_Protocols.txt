@@ -1,0 +1,17 @@
+CHAT-APP COMMUNICATION PROTOCOLS:
+    INFO PROTOCOLS:
+        1.<INFO Type='CLIENTS/SERVER'></INFO>
+            <INFO Type='VALS:Server:TYPE'></INFO>
+    UPDATE PROTOCOLS:
+        1.<UPDATE Type='CLIENTS/SERVER'></UPDATE>
+            <UPDATE Type='VALS:Client_ID'></UPDATE>
+    CHECK:
+        1.<CHECK Type='CHECK_PARAMETER'>True</CHECK>
+            <CHECK Type='Connection'>True</CHECK>
+    COMMAND PROTOCOLS:
+        1.<COMMAND Type='WARNING/ALERT'></COMMAND>
+        2.<END>                 
+        3.<DISCONNECT>
+    MESSAGE PROTOCOLS:
+        1.<CLIENT_MESSAGE Name=''></CLIENT_MESSAGE>     //  TAG: 1-15
+    

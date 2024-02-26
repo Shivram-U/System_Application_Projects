@@ -1,0 +1,2 @@
+Main-Class: Chat_App_Server.Server
+Class-Path: Java_Libraries/

@@ -1,0 +1,2 @@
+Main-Class: Chat_App_Server.Startup
+Class-Path: Java_Libraries/json-simple-1.1.1.jar

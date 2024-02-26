@@ -1,0 +1,36 @@
+JAVA_PACKAGE: Chat_App/
+DATA_FILES: Resources/
+Java Commands:
+1. All Java files Compilation with Package Reference Command:
+    1. Chat_App_Server Package  
+        $ javac -cp "D:\Shivram_U\Sources\Software\Project_Sys_WorkSpace\Android_App_Projects\General_Chat\Server_Applications\Java_Libraries\json-simple-1.1.1.jar;." -d . Client_Connection.java Chat_Server.java Server_Input_Thread.java Server.java
+    2. Chat_App_Client Package
+        $ javac -cp "D:\Shivram_U\Sources\Software\Project_Sys_WorkSpace\Android_App_Projects\General_Chat\Server_Applications\Java_Libraries\json-simple-1.1.1.jar;." -d .  Client_Connection.java Chat_Server.java Server_Input_Thread.java Server.java
+    3. Chat_App_Res Package
+        $ javac -cp "D:\Shivram_U\Sources\Software\Project_Sys_WorkSpace\Android_App_Projects\General_Chat\Server_Applications\Java_Libraries\json-simple-1.1.1.jar;." -d . identity.java Server_Identity.java Json_Handler.java Cust_JTabPn.java  
+    All Packages:
+        javac -cp "D:\Shivram_U\Sources\Software\Project_Sys_WorkSpace\Android_App_Projects\General_Chat\Server_Applications\Java_Libraries\json-simple-1.1.1.jar;." -d . identity.java Server_Identity.java Json_Handler.java Cust_JTabPn.java   Client_Connection.java Chat_Server.java Server_Input_Thread.java Server.java  Client_Connection.java Chat_Server.java Server_Input_Thread.java Server.java
+2. Chat_App Application Execution/Start_up Command:
+    1. Server Application:
+        $ java -cp "D:\Shivram_U\Sources\Software\Project_Sys_WorkSpace\Android_App_Projects\General_Chat\Server_Applications\Java_Libraries\json-simple-1.1.1.jar;." Chat_App_Server.Server_GUI  
+    2. Client Application:
+3. JAR file Execution
+    $   java -jar Executable_JAR_File.jar
+    $   java -jar Chat_App_Server.jar
+
+4. to run a Specific Java Class file inside a .jar file
+        $ java -cp "Library_JAR_File.jar" Java_Class_Name
+        $ java -cp "Chat_App_Server.jar" Server_GUI
+NOTE:
+1. Classpath
+    "D:\Shivram_U\Sources\Software\Project_Sys_WorkSpace\Android_App_Projects\General_Chat\Server_Applications\Java_Libraries\json-simple-1.1.1.jar;." 
+    The Above Class Path includes the 1.json-simple-1.1.1.jar file and the Current Directory.
+
+Other Commands:
+
+2. to open Command Prompt and execute a Java Class from a Library .jar File.
+    cmd /c start cmd.exe /k "chdir && java -cp Chat_App_Server.jar Chat_App_Server.Server_GUI && exit"
+    cmd /c start cmd.exe /k "chdir && dir && exit"
+    cmd /c start cmd.exe /k "dir && exit"
+Other Commands:
+
